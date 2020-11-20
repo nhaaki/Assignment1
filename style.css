@@ -11,7 +11,7 @@ html, body {
 
   
 body {
-    background-color: #BBB;
+    background-color: white;
     
     padding-bottom: 100px;
 }
@@ -23,7 +23,7 @@ h2, h3 {
 
 .column-layout {
     max-width: 1300px;
-    background-color: #FFF;
+    background-color: lightcyan;
     margin: 40px auto 0 auto;
     line-height: 1.65;
     padding: 20px 50px;
@@ -46,7 +46,7 @@ p{
     font-family: 'Lustria', serif;
 }
 
-@media screen and (min-width: 400px){
+@media screen and (max-width: 578px){
     .column-layout{
         display: flex;
         flex-direction: column;
@@ -54,5 +54,6 @@ p{
 
     .sidebar-two{
         margin: auto;
+        
     }
 }
