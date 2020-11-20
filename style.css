@@ -21,7 +21,7 @@ h2, h3 {
     font-family: 'Lato', sans-serif;
 }
 
-.column-layout {
+.flex-box {
     max-width: 1300px;
     background-color: lightcyan;
     margin: 40px auto 0 auto;
@@ -47,7 +47,7 @@ p{
 }
 
 @media screen and (max-width: 578px){
-    .column-layout{
+    .flex-box{
         display: flex;
         flex-direction: column;
     }
