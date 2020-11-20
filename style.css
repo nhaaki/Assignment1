@@ -35,10 +35,6 @@ h2, h3 {
     order: 2;
 }
   
-.sidebar-one {
-    flex: 1;
-    order: 1;
-}
 
 .sidebar-two {
     flex: 1;
@@ -48,4 +44,15 @@ h2, h3 {
 
 p{
     font-family: 'Lustria', serif;
+}
+
+@media screen and (min-width: 400px){
+    .column-layout{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar-two{
+        margin: auto;
+    }
 }
