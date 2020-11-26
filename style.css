@@ -8,12 +8,10 @@ html, body {
     margin: 0;
 }
   
-
-  
 body {
-    background-color: #BBB;
+    background-color: white;
     
-    padding-bottom: 100px;
+    padding-bottom: 100px; 
 }
   
 h2, h3 {
@@ -21,31 +19,119 @@ h2, h3 {
     font-family: 'Lato', sans-serif;
 }
 
-.column-layout {
+.flex-box {
     max-width: 1300px;
-    background-color: #FFF;
+    background-color: lightcyan;
     margin: 40px auto 0 auto;
     line-height: 1.65;
     padding: 20px 50px;
     display: flex;
 }
 
-.main-column {
+.column {
     flex: 3;
     order: 2;
 }
-  
-.sidebar-one {
-    flex: 1;
-    order: 1;
-}
 
-.sidebar-two {
+.side {
     flex: 1;
     order: 3;
     margin:10%;
 }
 
+.button1{
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    transition-duration: 0.4s;
+    border-radius: 8px;
+    width: 25%;
+    font-family: 'Bebas Neue', cursive;
+  }
+  
+.button1:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.button2{
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    transition-duration: 0.4s;
+    border-radius: 8px;
+    width: 20%;
+    margin-left: 300px;
+    font-family:'Bebas Neue', cursive;
+}
+
+.button2:hover{
+    background-color: #555555;
+    color: white;
+}
+
+.button3{
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    transition-duration: 0.4s;
+    border-radius: 8px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.button3:hover{
+    background-color: #555555;
+    color: white;
+}
+
 p{
     font-family: 'Lustria', serif;
+}
+
+.maincontainer{
+    max-width: 1400px;
+    height: 100%;
+    background-color: lightcyan;
+    margin: 40px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    flex-basis: 30%;
+}
+
+.text-block{
+    position: absolute;
+    bottom: 20px;
+    margin: 20%;
+    background-color: white;
+    border-radius: 8px;
+    border: 3px solid black;
+    
+}
+
+@media screen and (max-width: 578px){
+    .flex-box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar-two{
+        margin: auto;
+    }
+
+    .button2{
+        margin-left: 50%;
+    }
+
+    .maincontainer{
+        display: flex;
+        flex-direction: column;
+        height: 250%;
+    }
 }
