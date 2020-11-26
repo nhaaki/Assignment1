@@ -212,7 +212,18 @@ input[type=text]:focus, input[type=password]:focus {
         height: 250%;
     }
 
+    .projList{
+        padding: 0px;
+        
+    }
+
     .proj{
         display: flex;
+        max-width: 578px;
+        padding: 0px;
+    }
+    
+    .bg-img{
+        width: 30%;
     }
 }
