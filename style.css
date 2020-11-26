@@ -91,7 +91,7 @@ p{
 .maincontainer{
     max-width: 1400px;
     height: 100%;
-    background-color: lightcyan;
+    background-color: cadetblue;
     margin: 40px auto 0 auto;
     display: flex;
     justify-content: space-between;
@@ -106,14 +106,91 @@ p{
 }
 
 .text-block{
-    position: absolute;
-    bottom: 20px;
-    margin: 20%;
+    margin: 10%;
     background-color: white;
     border-radius: 8px;
     border: 3px solid black;
     
 }
+
+.projList{
+    width: 1400px; 
+    
+    margin: 40px auto 0 auto; 
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+    justify-content: space-between;
+	
+}
+
+.proj{
+    position: relative;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 1400px;
+    background-color: darkcyan;
+    display: block;
+    margin: auto;
+    line-height: 1;
+    padding: 20px;
+    display: flex;
+}
+
+#image1{
+    width:50%;
+    display: block;
+    margin:auto;
+}
+
+#image2{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.bg-img {
+    background-image: url(https://cdn.pixabay.com/photo/2015/09/09/16/05/forest-931706_1280.jpg);
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.cont {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+}
+  
+input[type=text], input[type=password] {
+    width: 200px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+  
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+  
+.submitBtn {
+    background-color: white;
+    color: black;
+    
+    border: solid black 2px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+  
+  
 
 @media screen and (max-width: 578px){
     .flex-box{
@@ -133,5 +210,9 @@ p{
         display: flex;
         flex-direction: column;
         height: 250%;
+    }
+
+    .proj{
+        display: flex;
     }
 }
